@@ -1,0 +1,18 @@
+$zmaps: (
+  /* ここをz-indexで上から順番に入れ替える。 */
+  modal,
+  content,
+  nav,
+  header,
+  footer
+  );
+
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1200px
+  );
+
+@function z($name) {
+  @return index($zmaps, $name)
+};
