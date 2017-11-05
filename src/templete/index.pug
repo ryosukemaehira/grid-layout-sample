@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Document
+    link(rel="stylesheet" href="./css/style.css")
+  body
+    .grid-container
+      header.header-main.is-gray
+        h1.header-main__logo grid-layout
+        p #cssnite
+      nav.navigation.is-gray
+        h1 navigation
+        ul
+          - for (var x = 0; x < 3; x++)
+            li item 01
+
+      .content.is-gray
+        .content-grid-container
+          - for (var x = 0; x <15; x++)
+            .content__item.content-grid-item
+              img.content__item__img(src="./images/item-thumbnail.png", alt="")
+              p.content--item__titie タイトル
+              .content--item__description
+      .content--sub
+        .box.is-black
+        p sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sampletext sample-text
+      aside.is-gray
+        p
+          | サイドバー
+          br
+          | サイドバー コンテンツ
+      footer.footer.is-gray
+        .l-flex-container.l-flex-position-space-between.l-flex-align-center
+          p.footer__logo grid-layout_footer
+          p.footer__copyright copyright 2017 ryosukemaehira

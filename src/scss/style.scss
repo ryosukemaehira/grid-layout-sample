@@ -1,0 +1,12 @@
+@import "./shared/reset.scss";
+@import "./shared/controll-zindex.scss";
+@import "./layout/g-layout.scss";
+@import "./layout/top-layout.scss";
+
+.is-gray {
+  background-color: #eee;
+}
+
+.is-black {
+  background-color: #333;
+}
