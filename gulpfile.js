@@ -6,9 +6,7 @@ var webserver = require('gulp-webserver')
 
 gulp.task('compile-pug', function buildHTML() {
   return gulp.src('./src/templete/*.pug')
-  .pipe(pug({
-    // Your options in here. 
-  }))
+  .pipe(pug())
   .pipe(gulp.dest('./dist/'))
 });
 
@@ -17,7 +15,6 @@ gulp.task('compile-scss', function () {
   .pipe(scss())
   .pipe(gulp.dest('./dist/css/'))
 })
-
 
 gulp.task('compile', ['compile-scss', 'compile-pug']);
 
